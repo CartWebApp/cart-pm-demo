@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+nav.main-nav {
+    width: 100%;
+    max-width:1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.main-nav .logo {
+    width: 200px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 250ms ease;
+}
+
+.main-nav a:hover {
+    color: yellow;
+    background-color: dodgerblue;
+}
+
+.hero {
+    height: 75vh;
+    background-image: url(../img/castle.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background-color: rgba(0,0,0,0.5);
+    width: 30%;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.25);
+    padding: 2rem;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+[class^=content-item]{ /* to aid visibility on the demo don't use! */
+    border: solid 1px dodgerblue;
+    min-height: 150px;
+}
+
+.one-third {
+    width: 30%;
+}
+
+.two-thirds {
+    width: 60%;
+}
+
+.half {
+    width: 45%;
+}
+
+.one-quarter {
+    width: 22.5%;
+}
+
+footer {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    min-height: 300px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
